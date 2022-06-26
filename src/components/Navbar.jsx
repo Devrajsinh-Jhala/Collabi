@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Button from "./Button";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import navImage from "../assets/Collabi Logo.png";
+import navImage from "../assets/Metadev Logo Image.png";
 
 const Navbar = () => {
   let Links = [

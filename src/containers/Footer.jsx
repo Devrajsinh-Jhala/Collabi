@@ -1,5 +1,5 @@
 import React from "react";
-import navImage from "../assets/Collabi Logo.png";
+import navImage from "../assets/Metadev Logo Image.png";
 
 const Footer = () => {
   return (

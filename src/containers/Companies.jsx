@@ -36,7 +36,7 @@ function Companies() {
         startups to tech giants, you{"'"}ll find over 3,500 top companies and
         70,000+ live jobs on Otta
       </div>
-      <div className="w-[90%] lg:w-[80%]  text-center overflow-hidden mt-0 mx-auto">
+      <div className="w-[90%] lg:w-[70%]  text-center overflow-hidden mt-0 mx-auto">
         <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4">
           <CompanyLogo company={"Airbnb"} image={logo1} />
           <CompanyLogo company={"Cazon"} image={logo2} />

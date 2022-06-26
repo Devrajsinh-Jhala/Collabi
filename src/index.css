@@ -24,7 +24,7 @@
 }
 
 .big-text {
-  @apply text-[36px] lg:text-[46px] lg:font-[800] leading-[3rem] tracking-[-2.5px] md:tracking-[-2.7px] lg:leading-[3.5rem] font-bold;
+  @apply text-[36px] lg:text-[50px] lg:font-[800] tracking-[-2.5px] leading-10 lg:leading-[4rem] font-bold;
 }
 
 body {

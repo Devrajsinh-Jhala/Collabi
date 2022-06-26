@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className=" z-0 h-full flex justify-center relative font-inter ">
       <div className="flex flex-col gap-12 items-center p-[10px] mt-[1rem]">
-        <div className="flex flex-col items-center gap-2 md:gap-4 lg:gap-6">
+        <div className="flex  flex-col items-center gap-2 md:gap-4 lg:gap-6">
           <div className=" flex flex-wrap sm:w-[70%]  sm:justify-center ">
             <div className="overflow-hidden mt-32">
               <h1 className=" z-0 w-full max-w-[1000px] text-center big-text mb-[2rem] sm:mb-[0]  ">
