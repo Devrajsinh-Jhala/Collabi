@@ -1,18 +1,18 @@
 import "./index.css";
-import Navbar from "./components/Navbar";
-import Footer from "./containers/Footer";
 import Header from "./containers/Header";
-import Tagline from "./components/Tagline";
-import Companies from "./containers/Companies";
+import SignUp from "./containers/SignUp";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Header />
-      <Tagline />
-      <Companies />
-      <Footer />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Header />} />
+
+          <Route path="/sign-up" element={<SignUp />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
