@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const InputElement = () => {
   return (
@@ -8,13 +9,18 @@ const InputElement = () => {
           Sign Up and Explore the Metaverse for Developers
         </p>
         <input
-          className="w-[400px] tracking-tight font-inter pl-[20px] border border-gray-400 rounded-lg  focus:outline-none py-[20px] h-[50px] "
+          className=" w-full sm:w-[400px] tracking-tight font-inter pl-[20px] border border-gray-400 rounded-lg  focus:outline-none py-[20px] h-[50px] "
           type="email"
           name="email"
           placeholder="Sign up with your email"
         />
-        <p className="font-inter font-semibold text-black text-[13px] mt-4 mb-4 ">
-          Have a MetaDev Account? Please Sign In
+        <p className="font-inter font-semibold text-slate-600 text-[13px] mt-4 mb-4 ">
+          Have a MetaDev Account? Please{" "}
+          <Link to={"/sign-in"}>
+            <span className="text-pink-500 underline cursor-pointer">
+              Sign In
+            </span>
+          </Link>
         </p>
       </div>
     </div>

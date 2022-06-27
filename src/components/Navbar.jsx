@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Button from "./Button";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import navImage from "../assets/Metadev Logo Image.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   let Links = [
@@ -45,8 +46,12 @@ const Navbar = () => {
             </li>
           ))}
           <div className="flex  md:ml-4 flex-col items-center md:flex-row gap-5 md:gap-0">
-            <Button>Login</Button>
-            <Button>SignUp</Button>
+            <Link to={"/sign-in"}>
+              <Button>Login</Button>
+            </Link>
+            <Link to={"/sign-up"}>
+              <Button>SignUp</Button>
+            </Link>
           </div>
         </ul>
       </div>
