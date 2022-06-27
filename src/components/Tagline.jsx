@@ -2,7 +2,7 @@ import React from "react";
 
 function Tagline() {
   return (
-    <div className="min-h-[50vh] font-inter py-12 px-4">
+    <div className="min-h-[50vh] font-inter py-10 px-4">
       <div className="px-4 md:px-8 lg:px-12 xl:px-24 text-center my-28 text-3xl font-medium">
         The only job search
         <div className="big-text">that does you justice</div>

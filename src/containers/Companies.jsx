@@ -28,7 +28,7 @@ import logo24 from "../assets/companyLogos/24.png";
 function Companies() {
   return (
     <div className="min-h-[50vh] font-inter py-12 px-4 bg-slate-100">
-      <div className="w-[90%] lg:w-[60%] xl:w-[45%] mx-auto text-center big-text mt-36 mb-12">
+      <div className="w-[90%] lg:w-[60%] xl:w-[45%] mx-auto text-center big-text mt-24 mb-12">
         We are just as picky as you are
       </div>
       <div className="w-[90%] lg:w-[60%] xl:w-[45%] mx-auto text-center mt-12 mb-12">
