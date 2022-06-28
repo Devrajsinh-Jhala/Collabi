@@ -1,13 +1,7 @@
 import React from "react";
 import Image from "../assets/Background Image 1.png";
-import SignInInputElement from "../components/SignInInputElement";
 import Logo from "../assets/Metadev Logo Image.png";
-import SignUpButton from "../components/SignUpButton";
-import { BsFacebook } from "react-icons/bs";
-import { FaEthereum, FaTwitter } from "react-icons/fa";
-import MetaMaskButton from "../components/MetaMaskButton";
 import ReferralButton from "./ReferralButton";
-import ReferralInput from "../components/ReferralInput";
 
 const ReferralPage = () => {
   return (
