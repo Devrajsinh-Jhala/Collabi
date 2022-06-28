@@ -13,7 +13,7 @@ const Header = () => {
         <div className="flex flex-col gap-12 items-center p-[10px] mt-[1rem]">
           <div className="flex  flex-col items-center gap-2 md:gap-4 lg:gap-6">
             <div className=" flex flex-wrap sm:w-[70%]  sm:justify-center ">
-              <div className="overflow-hidden mt-32">
+              <div className="overflow-hidden mt-16">
                 <h1 className=" z-0 w-full max-w-[1000px] text-center big-text mb-[2rem] sm:mb-[0]  ">
                   <span className="p-2">
                     A professional networking platform built for
@@ -23,7 +23,7 @@ const Header = () => {
               </div>
             </div>
             <div className="mt-4 sm:w-[60%] sub-head overflow-hidden mb-[2rem] sm:mb-[0]">
-              <h1 className="text-center text-[18px]">
+              <h1 className="text-center leading-6 tracking-tight text-[18px]">
                 {" "}
                 This is where people who code connect, share their knowledge,
                 collaborate with like minded individuals and find new

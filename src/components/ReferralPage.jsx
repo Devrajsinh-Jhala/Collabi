@@ -38,10 +38,13 @@ const ReferralPage = () => {
                 We can't wait for you to join!
               </div>
             </div>
-            <p className="font-inter text-base text-slate-500 font-semibold mt-5 -mb-10 pl-2">
-              Invite Code
-            </p>
-            <ReferralInput />
+
+            <input
+              className=" w-full overflow-hidden sm:w-[200px] mt-5 tracking-tight font-inter pl-[20px] border border-gray-400 rounded-lg  focus:outline-none py-[20px] h-[50px] "
+              type="email"
+              name="email"
+              placeholder="Invite Code"
+            />
             <ReferralButton text={"Unlock Access"} />
           </div>
         </div>

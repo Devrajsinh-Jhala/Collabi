@@ -30,7 +30,7 @@ const OtpInput = ({ text, subText, boldText }) => {
             maxLength={1}
           />
           <input id="third" type="text" className="input-field" maxLength={1} />
-          <div className="w-[20px] mt-12 h-[0] border-t-[6px] border-black"></div>
+          <div className="w-[20px] mt-9 h-[0] border-t-[6px] border-black"></div>
           <input
             id="fourth"
             type="text"
