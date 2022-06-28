@@ -27,6 +27,13 @@
   @apply text-[36px] lg:text-[54px] lg:font-[800] tracking-[-2.5px] leading-10 lg:leading-[4rem] font-bold;
 }
 
+.input-field {
+  @apply px-[20px] py-[20px] my-[15px] m-2 border-[1px] border-slate-400  rounded-md  text-black w-[60px] text-[18px] text-center;
+}
+.input-field1 {
+  @apply px-[10px] py-[10px] my-[15px] m-2 border-[1px] border-slate-400  rounded-md  text-black w-[45px] text-[18px] text-center;
+}
+
 body {
   margin: 0;
   padding: 0;

@@ -10,15 +10,15 @@ import MetaMaskButton from "../components/MetaMaskButton";
 
 const SignUp = () => {
   return (
-    <div className="flex h-[100%] xl:h-[100vh] ">
+    <div className="flex h-[100%] ">
       <div className="left  ">
         <img
-          className=" h-[100%] hidden sm:flex lg:w-[550px] object-cover"
+          className=" min-h-[100%] h-[100vh] hidden sm:flex lg:w-[550px] object-cover"
           src={Image}
           alt={Image}
         />
       </div>
-      <div className="flex flex-col items-center mt-4 ">
+      <div className="flex flex-col items-center mt-20 ">
         <div className="right flex flex-col items-center justify-center m-4 sm:ml-[70px]">
           <div>
             <img className="w-36" src={Logo} alt={Logo} />

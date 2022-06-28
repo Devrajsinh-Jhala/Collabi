@@ -18,7 +18,7 @@ const SignIn = () => {
           alt={Image}
         />
       </div>
-      <div className="flex flex-col items-center mt-10 ">
+      <div className="flex flex-col items-center mt-24 ">
         <div className="right flex flex-col items-center justify-center m-4 sm:ml-[70px]">
           <div>
             <img className="w-36" src={Logo} alt={Logo} />

@@ -49,8 +49,8 @@ const Navbar = () => {
             <Link to={"/sign-in"}>
               <Button>Login</Button>
             </Link>
-            <Link to={"/sign-up"}>
-              <Button>SignUp</Button>
+            <Link to={"/referral"}>
+              <Button>Have an invite ?</Button>
             </Link>
           </div>
         </ul>
