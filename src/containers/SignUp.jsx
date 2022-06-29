@@ -4,8 +4,7 @@ import AuthenticationButton from "../components/AuthenticationButton";
 import InputElement from "../components/ImputElement";
 import Logo from "../assets/Metadev Logo Image.png";
 import SignUpButton from "../components/SignUpButton";
-import { BsFacebook } from "react-icons/bs";
-import { FaEthereum, FaTwitter } from "react-icons/fa";
+import { BsGoogle } from "react-icons/bs";
 import MetaMaskButton from "../components/MetaMaskButton";
 
 const SignUp = () => {
@@ -23,7 +22,10 @@ const SignUp = () => {
           <div>
             <img className="w-36" src={Logo} alt={Logo} />
             <InputElement />
-            <AuthenticationButton text={"Create Account"} />
+            <AuthenticationButton
+              link={"otp-verification"}
+              text={"Create Account"}
+            />
 
             <div className=" mt-24 md:mt-20 md:mb-8">
               <span className="text-slate-600 font-inter font-semibold">
@@ -31,10 +33,8 @@ const SignUp = () => {
               </span>
 
               <div className="grid grid-cols-2 gap-5 mt-5">
+                <SignUpButton icon={<BsGoogle />} name={"Google"} />
                 <MetaMaskButton />
-                <SignUpButton icon={<FaTwitter />} name={"Twitter"} />
-                <SignUpButton icon={<BsFacebook />} name={"Facebook"} />
-                <SignUpButton icon={<FaEthereum />} name={"Ethereum"} />
               </div>
             </div>
           </div>

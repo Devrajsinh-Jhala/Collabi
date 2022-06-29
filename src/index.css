@@ -28,10 +28,16 @@
 }
 
 .input-field {
-  @apply px-[10px] py-[10px] my-[15px] m-2 border-[1px] border-slate-400  rounded-md  text-black w-[60px] text-[20px] font-semibold text-center;
+  @apply font-inter px-[10px] py-[10px] my-[15px] m-2 border-[1px] border-slate-400  rounded-md  text-black w-[60px] text-[20px] font-semibold text-center;
 }
 .input-field1 {
-  @apply px-[10px] py-[10px] my-[15px] m-2 border-[1px] border-slate-400  rounded-md  text-black w-[45px] text-[18px] text-center;
+  @apply font-inter px-[10px] py-[10px] my-[15px] m-2 border-[1px] border-slate-400  rounded-md  text-black w-[45px] text-[18px] text-center;
+}
+
+/* Temporary user profile circle */
+
+.circle {
+  @apply flex w-[100px] h-[100px] bg-green-600 rounded-full;
 }
 
 body {

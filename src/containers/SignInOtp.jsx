@@ -1,8 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Image from "../assets/Background Image 1.png";
 import Logo from "../assets/Metadev Logo Image.png";
-import OtpInput from "./OtpInput";
+import OtpInput from "../components/OtpInput";
 
 const OtpVerification = () => {
   return (
@@ -31,11 +30,9 @@ const OtpVerification = () => {
               <button className="pt-3 font-semibold pr-2 font-inter rounded-full text-slate-500 hover:text-slate-900 bg-[white]">
                 Use a different Email
               </button>
-              <Link to={"/profile"}>
-                <button className="pt-3 font-semibold pr-2 font-inter rounded-full text-slate-500 hover:text-slate-900 bg-[white]">
-                  Temporary button
-                </button>
-              </Link>
+              <button className="pt-3 font-semibold pl-2 font-inter rounded-full text-slate-500 hover:text-slate-900 bg-[white]">
+                Sign In with password
+              </button>
             </div>
           </div>
         </div>
