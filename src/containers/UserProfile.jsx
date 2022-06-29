@@ -5,14 +5,15 @@ import "react-phone-input-2/lib/style.css";
 
 import { Link } from "react-router-dom";
 import Button from "../components/Button";
+import Socials from "../components/Socials";
 
 const UserProfile = () => {
   const [value, setValue] = useState("");
   return (
     <div className="flex h-[100%] xl:h-[100vh] ">
-      <div className="left  ">
+      <div className="left">
         <img
-          className=" h-[100%] hidden sm:flex lg:w-[500px] object-cover"
+          className=" min-h-[100%] hidden sm:flex lg:w-[500px] object-cover"
           src={Image}
           alt={Image}
         />
@@ -46,7 +47,7 @@ const UserProfile = () => {
                     onChange={() => setValue(value)}
                     countryCodeEditable={false}
                     placeholder="99999 99999"
-                    inputStyle={{ width: "100%" }}
+                    inputStyle={{ width: "350px" }}
                   />
                 </div>
               </div>
@@ -64,6 +65,10 @@ const UserProfile = () => {
             cols="42"
             rows="3"
           ></textarea>
+
+          <div className="mt-10 mb-5">
+            <Socials />
+          </div>
 
           <div className="mt-4">
             <Link to={"/goals"}>

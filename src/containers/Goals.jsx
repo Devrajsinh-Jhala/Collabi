@@ -1,20 +1,12 @@
 import React from "react";
-import Image from "../assets/Background Image 1.png";
 import GoalsBox from "../components/GoalsBox";
 
 const Goals = () => {
   return (
-    <div className="flex h-[100%] ">
-      <div className="left  ">
-        <img
-          className=" min-h-[100%] hidden sm:flex lg:w-[500px] object-cover"
-          src={Image}
-          alt={Image}
-        />
-      </div>
+    <div className="flex h-[100%] items-center justify-center ">
       <div className="flex flex-col items-center mt-24 ">
         <div className="right flex flex-col items-center justify-center  ml-4 mr-4 mb-10 ">
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-3 gap-6">
             <div>
               <GoalsBox
                 text={"Beta testing new products"}

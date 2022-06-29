@@ -8,7 +8,7 @@ const OtpVerification = () => {
     <div className="flex h-[100%] xl:h-[100vh] ">
       <div className="left  ">
         <img
-          className=" h-[100%] hidden sm:flex lg:w-[550px] object-cover"
+          className=" h-[100%] hidden sm:flex lg:w-[500px] object-cover"
           src={Image}
           alt={Image}
         />
