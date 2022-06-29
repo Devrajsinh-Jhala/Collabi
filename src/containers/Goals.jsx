@@ -7,7 +7,7 @@ const Goals = () => {
     <div className="flex h-[100%] ">
       <div className="left  ">
         <img
-          className=" min-h-[100%] hidden sm:flex lg:w-[550px] object-cover"
+          className=" min-h-[100%] hidden sm:flex lg:w-[500px] object-cover"
           src={Image}
           alt={Image}
         />
