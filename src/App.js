@@ -7,7 +7,6 @@ import OtpVerification from "./components/OtpVerification";
 import ReferralPage from "./components/ReferralPage";
 import SignInOtp from "./containers/SignInOtp";
 import UserProfile from "./containers/UserProfile";
-import SocialAccounts from "./containers/SocialAccounts";
 import Goals from "./containers/Goals";
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
           <Route path="/sign-in-otp" element={<SignInOtp />} />
           <Route path="/referral" element={<ReferralPage />} />
           <Route path="/profile" element={<UserProfile />} />
-          <Route path="/social" element={<SocialAccounts />} />
           <Route path="/goals" element={<Goals />} />
         </Routes>
       </Router>

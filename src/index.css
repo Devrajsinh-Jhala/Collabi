@@ -37,7 +37,7 @@
 /* Temporary user profile circle */
 
 .circle {
-  @apply flex w-[100px] h-[100px] bg-green-600 rounded-full;
+  @apply flex w-[110px] h-[110px] bg-green-600 rounded-full;
 }
 
 body {
