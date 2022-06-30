@@ -5,8 +5,10 @@ import OtpInput from "./OtpInput";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Oval } from "react-loader-spinner";
+import { useNavigate } from "react-router-dom";
 
 const OtpVerification = () => {
+  const navigate = useNavigate();
   const spinnerText = () => {
     return (
       <div className="flex items-center justify-start">
@@ -34,7 +36,7 @@ const OtpVerification = () => {
       progress: undefined,
     });
 
-    // navigate("/profile");
+    navigate("/profile");
   };
 
   return (
