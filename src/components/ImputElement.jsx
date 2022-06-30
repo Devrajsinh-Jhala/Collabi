@@ -12,7 +12,7 @@ const InputElement = () => {
           Email Address
         </p>
         <input
-          className=" w-full sm:w-[400px] tracking-tight font-inter pl-[15px] border border-gray-400 rounded-lg  focus:outline-none  py-[20px] h-[46px] "
+          className=" w-full sm:w-[400px] leading-[1.3rem] tracking-[-0.015em] font-inter pl-[15px] border border-gray-400 rounded-lg text-[14px]  focus:outline-none  py-[13px] h-[43px] "
           type="email"
           name="email"
           placeholder="example@example.com"

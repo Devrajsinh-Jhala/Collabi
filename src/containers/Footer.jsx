@@ -12,13 +12,10 @@ const Footer = () => {
             alt={navImage}
           />
         </div>
-        <h3 className="py-2 font-inter text-base">
-          Welcome to the era of influencer marketing
-        </h3>
+        <h3 className="py-2 font-inter text-base">Metaverse for Developers</h3>
 
         <p className=" py-4 text-[13px]">
-          Copyright © 2022 | Made in India with ♡ for Influencers | All rights
-          reserved
+          Copyright © 2022 | Made with ♡ for Developers | All rights reserved
         </p>
       </div>
       <div className="px-4 py-2 w-full justify-start flex flex-col md:w-[36%]">
@@ -32,7 +29,6 @@ const Footer = () => {
       <div className="px-4 md:-mt-4 py-5 w-full md:w-[36%]">
         <p className="font-semibold">Social</p>
         <p className="py-2 text-[13px] text-[#6b6f76]">Instagram</p>
-        <p className="py-2 text-[13px] text-[#6b6f76]">Facebook</p>
         <p className="py-2 text-[13px] text-[#6b6f76]">LinkedIn</p>
       </div>
     </div>

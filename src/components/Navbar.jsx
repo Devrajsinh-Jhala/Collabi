@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   let Links = [
-    { name: "Brands", links: "/brands" },
-    { name: "Influencers", links: "/influencers" },
+    { name: "Whitepaper", links: "/whitepaper" },
+    { name: "Dev Tokens", links: "/devTokens" },
   ];
 
   let [open, setOpen] = useState(false);

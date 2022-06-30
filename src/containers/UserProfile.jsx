@@ -30,7 +30,7 @@ const UserProfile = () => {
                   Name
                 </p>
                 <input
-                  className=" w-full ml-6 sm:w-[350px] tracking-[-0.015em] leading-[1.3rem] font-inter pl-[15px] border border-gray-400 rounded-lg text-[14px] focus:outline-none py-[20px] h-[46px] "
+                  className=" w-full ml-6 sm:w-[263px] tracking-[-0.015em] leading-[1.3rem] font-inter pl-[15px] border border-gray-400 rounded-lg text-[14px] focus:outline-none py-[15px] h-[41px] "
                   type="email"
                   name="email"
                   placeholder="Enter your Name"
@@ -47,7 +47,12 @@ const UserProfile = () => {
                     onChange={() => setValue(value)}
                     countryCodeEditable={false}
                     placeholder="99999 99999"
-                    inputStyle={{ width: "350px" }}
+                    inputStyle={{
+                      width: "265px",
+                      height: "42px",
+                      fontFamily: "Inter",
+                      fontSize: "14px",
+                    }}
                   />
                 </div>
               </div>
@@ -62,7 +67,7 @@ const UserProfile = () => {
             name=""
             id=""
             placeholder="Write something about yourself..."
-            cols="42"
+            cols="48"
             rows="3"
           ></textarea>
 

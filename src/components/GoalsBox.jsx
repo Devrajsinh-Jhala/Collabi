@@ -6,7 +6,7 @@ const GoalsBox = ({ text, subText }) => {
   return (
     <div className="w-[330px] border h-full border-slate-500 rounded-md">
       <div className="flex items-center px-4 py-2 justify-between">
-        <p className="text-[18px] font-inter leading-[1.3rem] font-semibold">
+        <p className="text-[16px] font-inter leading-[1.2rem] font-semibold">
           {text}
         </p>
         <div
@@ -30,7 +30,7 @@ const GoalsBox = ({ text, subText }) => {
           <AiFillCheckCircle />
         </div>
       </div>
-      <div className=" leading-[1.3rem] tracking-[-0.015] font-inter text-[14px] px-4 -mt-3 py-2">
+      <div className=" leading-[1.3rem] tracking-[-0.015em] mr-[25px] font-inter text-[13px] px-4 -mt-4 py-2">
         {subText}
       </div>
     </div>

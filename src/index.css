@@ -28,7 +28,7 @@
 }
 
 .input-field {
-  @apply font-inter px-[10px] py-[10px] my-[15px] m-2 border-[1px] border-slate-400  rounded-md  text-black w-[60px] text-[20px] font-semibold text-center;
+  @apply font-inter px-[9px] py-[10px] my-[13px] m-2 border-[1px] border-slate-400  rounded-md  text-black w-[50px] text-[20px] font-semibold text-center;
 }
 .input-field1 {
   @apply font-inter px-[10px] py-[10px] my-[15px] m-2 border-[1px] border-slate-400  rounded-md  text-black w-[45px] text-[18px] text-center;
