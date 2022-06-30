@@ -9,6 +9,24 @@ const Goals = () => {
           <div className="grid grid-cols-3 gap-6">
             <div>
               <GoalsBox
+                text={"Web3 Builder"}
+                subText={"Building innovative Web3 solutions"}
+              />
+            </div>
+            <div>
+              <GoalsBox
+                text={"Open Source Contributions"}
+                subText={"Contributing to open source projects"}
+              />
+            </div>
+            <div>
+              <GoalsBox
+                text={"Full time roles"}
+                subText={"Starting a new role in a full time capacity"}
+              />
+            </div>
+            <div>
+              <GoalsBox
                 text={"Beta testing new products"}
                 subText={
                   "Checking out the newest consumer or business products"
@@ -39,12 +57,7 @@ const Goals = () => {
                 }
               />
             </div>
-            <div>
-              <GoalsBox
-                text={"Full time roles"}
-                subText={"Starting a new role in a full time capacity"}
-              />
-            </div>
+
             <div>
               <GoalsBox
                 text={"Giving resume feedback"}
@@ -59,26 +72,7 @@ const Goals = () => {
                 }
               />
             </div>
-            <div>
-              <GoalsBox
-                text={"Technical and career talks"}
-                subText={
-                  "Attending and giving developer talks with topics like new tools and frameworks, technical concepts, etc"
-                }
-              />
-            </div>
-            <div>
-              <GoalsBox
-                text={"Web3 Builder"}
-                subText={"Building innovative Web3 solutions"}
-              />
-            </div>
-            <div>
-              <GoalsBox
-                text={"Open Source Contributions"}
-                subText={"Contributing to open source projects"}
-              />
-            </div>
+
             <div>
               <GoalsBox
                 text={"Participating in User Research"}
@@ -102,6 +96,14 @@ const Goals = () => {
                 text={"Investing"}
                 subText={
                   "Investing in startups through crowdfunding and direct investments"
+                }
+              />
+            </div>
+            <div>
+              <GoalsBox
+                text={"Technical and career talks"}
+                subText={
+                  "Attending and giving developer talks with topics like new tools and frameworks, technical concepts, etc"
                 }
               />
             </div>

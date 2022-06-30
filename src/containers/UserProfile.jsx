@@ -6,6 +6,8 @@ import "react-phone-input-2/lib/style.css";
 import { Link } from "react-router-dom";
 import Button from "../components/Button";
 import Socials from "../components/Socials";
+import AuthenticationButton from "../components/AuthenticationButton";
+import UserButton from "../components/UserButton";
 
 const UserProfile = () => {
   const [value, setValue] = useState("");
@@ -75,9 +77,9 @@ const UserProfile = () => {
             <Socials />
           </div>
 
-          <div className="mt-4">
-            <Link to={"/goals"}>
-              <Button>Next</Button>
+          <div className="mt-2">
+            <Link to="/goals">
+              <UserButton text={"Next"} />
             </Link>
           </div>
         </div>

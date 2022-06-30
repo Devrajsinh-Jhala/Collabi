@@ -18,9 +18,11 @@ const OtpVerification = () => {
           width={20}
           strokeWidth={5}
           color="red"
-          secondaryColor="green"
+          secondaryColor="yellow"
         />
-        <div className="ml-4 font-inter">Verfying...</div>
+        <div className="ml-4 font-inter text-white text-16px ">
+          Verifying...
+        </div>
       </div>
     );
   };
@@ -29,11 +31,17 @@ const OtpVerification = () => {
     toast(spinnerText, {
       position: "bottom-center",
       autoClose: 1500,
-      hideProgressBar: false,
+      hideProgressBar: true,
       closeOnClick: true,
       pauseOnHover: true,
       draggable: true,
       progress: undefined,
+      style: {
+        width: "200px",
+        borderRadius: "10%",
+        fontFamily: "Inter",
+        backgroundColor: "Green",
+      },
     });
 
     navigate("/profile");
@@ -71,7 +79,7 @@ const OtpVerification = () => {
                   onClick={handleClick}
                   className="pt-3 font-semibold pr-2 font-inter rounded-full text-slate-500 hover:text-slate-900 bg-[white]"
                 >
-                  Temporary button
+                  Verify OTP
                 </button>
                 <ToastContainer
                   position="bottom-center"
