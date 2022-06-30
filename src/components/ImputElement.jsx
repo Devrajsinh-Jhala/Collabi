@@ -8,11 +8,11 @@ const InputElement = () => {
         <p className="font-inter  text-black text-[18px] mb-8 ">
           Sign Up and Explore the Metaverse for Developers
         </p>
-        <p className="font-inter font-semibold text-black text-[16px] mb-2 ">
+        <p className="font-inter font-semibold text-black text-[13px] mb-2 ">
           Email Address
         </p>
         <input
-          className=" w-full sm:w-[400px] tracking-tight font-inter pl-[15px] border border-gray-400 rounded-lg  focus:outline-none py-[20px] h-[46px] "
+          className=" w-full sm:w-[400px] tracking-tight font-inter pl-[15px] border border-gray-400 rounded-lg  focus:outline-none  py-[20px] h-[46px] "
           type="email"
           name="email"
           placeholder="example@example.com"

@@ -30,7 +30,7 @@ const UserProfile = () => {
                   Name
                 </p>
                 <input
-                  className=" w-full ml-6 sm:w-[350px] tracking-tight font-inter pl-[15px] border border-gray-400 rounded-lg  focus:outline-none py-[20px] h-[46px] "
+                  className=" w-full ml-6 sm:w-[350px] tracking-[-0.015em] leading-[1.3rem] font-inter pl-[15px] border border-gray-400 rounded-lg text-[14px] focus:outline-none py-[20px] h-[46px] "
                   type="email"
                   name="email"
                   placeholder="Enter your Name"
@@ -58,7 +58,7 @@ const UserProfile = () => {
             Your Bio
           </p>
           <textarea
-            className="border focus:outline-none focus:border-blue-500 py-2 px-2 border-slate-400 rounded-md resize-none font-inter leading-6"
+            className="border tracking-[-0.015em] leading-[1.3rem] text-[14px] focus:outline-none focus:border-blue-500 py-2 px-2 border-slate-400 rounded-md resize-none font-inter "
             name=""
             id=""
             placeholder="Write something about yourself..."
