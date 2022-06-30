@@ -1,9 +1,6 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 
 const OtpInput = ({ text, subText, boldText }) => {
-  const navigate = useNavigate();
-
   var myopt = document.querySelectorAll(".input-field");
   console.log(myopt);
   for (var i = 0; i < myopt.length - 1; i++) {
@@ -11,11 +8,6 @@ const OtpInput = ({ text, subText, boldText }) => {
       this.nextElementSibling.focus();
     });
   }
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    navigate("/profile");
-  };
 
   return (
     <>
@@ -27,44 +19,45 @@ const OtpInput = ({ text, subText, boldText }) => {
 
         <div className="flex justify-center items-center">
           <div className="flex justify-between">
-            <input
-              id="ist"
-              type="text"
-              className="input-field hi"
-              maxLength={1}
-            />
-            <input
-              id="sec"
-              type="text"
-              className="input-field hi"
-              maxLength={1}
-            />
-            <input
-              id="third"
-              type="text"
-              className="input-field"
-              maxLength={1}
-            />
+            <form>
+              <input
+                id="ist"
+                type="text"
+                className="input-field hi"
+                maxLength={1}
+              />
+              <input
+                id="sec"
+                type="text"
+                className="input-field hi"
+                maxLength={1}
+              />
+              <input
+                id="third"
+                type="text"
+                className="input-field"
+                maxLength={1}
+              />
 
-            <input
-              id="fourth"
-              type="text"
-              className="input-field "
-              maxLength={1}
-            />
-            <input
-              id="fifth"
-              type="text"
-              className="input-field"
-              maxLength={1}
-            />
-            <input
-              onKeyDown={handleSubmit}
-              id="sixth"
-              type="text"
-              className="input-field"
-              maxLength={1}
-            />
+              <input
+                id="fourth"
+                type="text"
+                className="input-field "
+                maxLength={1}
+              />
+              <input
+                id="fifth"
+                type="text"
+                className="input-field"
+                maxLength={1}
+              />
+              <input
+                id="sixth"
+                type="text"
+                className="input-field"
+                maxLength={1}
+              />
+            </form>
           </div>
         </div>
       </div>
