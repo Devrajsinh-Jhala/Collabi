@@ -1,19 +1,20 @@
 import React from "react";
-import Image from "../assets/Background Image 1.png";
+
 import Logo from "../assets/Metadev Logo Image.png";
 import OtpInput from "../components/OtpInput";
+import { useNavigate } from "react-router-dom";
 
 const OtpVerification = () => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/profile");
+  };
   return (
     <div className="flex h-[100%] xl:h-[100vh] ">
-      <div className="left  ">
-        <img
-          className=" h-[100%] hidden sm:flex lg:w-[500px] object-cover"
-          src={Image}
-          alt={Image}
-        />
+      <div className="left fixed top-0 left-0 bottom-0 ">
+        <div className=" min-h-[100%] hidden sm:flex lg:w-[500px] bg-[#f1f5f9] xl:w-[600px] 2xl:w-[900px] object-cover" />
       </div>
-      <div className="flex flex-col items-center mt-24 ">
+      <div className="flex flex-col relative sm:right-0 lg:-right-[500px] xl:-right-[600px] 2xl:-right-[1000px] items-center mt-24 ">
         <div className="right flex flex-col items-center justify-center m-4 sm:ml-[70px]">
           <div>
             <img className="w-36" src={Logo} alt={Logo} />
@@ -30,8 +31,11 @@ const OtpVerification = () => {
               <button className="pt-3 font-semibold pr-2 font-inter rounded-full text-slate-500 hover:text-slate-900 bg-[white]">
                 Use a different Email
               </button>
-              <button className="pt-3 font-semibold pl-2 font-inter rounded-full text-slate-500 hover:text-slate-900 bg-[white]">
-                Sign In with password
+              <button
+                onClick={handleClick}
+                className="pt-3 font-semibold pr-2 font-inter rounded-full text-slate-500 hover:text-slate-900 bg-[white]"
+              >
+                Verify OTP
               </button>
             </div>
           </div>

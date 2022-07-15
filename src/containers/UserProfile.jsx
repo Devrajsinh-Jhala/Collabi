@@ -1,27 +1,22 @@
 import React, { useState } from "react";
-import Image from "../assets/Background Image 1.png";
+
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
 import { Link } from "react-router-dom";
-import Button from "../components/Button";
+
 import Socials from "../components/Socials";
-import AuthenticationButton from "../components/AuthenticationButton";
 import UserButton from "../components/UserButton";
 
 const UserProfile = () => {
   const [value, setValue] = useState("");
   return (
     <div className="flex h-[100%] xl:h-[100vh] ">
-      <div className="left">
-        <img
-          className=" min-h-[100%] hidden sm:flex lg:w-[500px] object-cover"
-          src={Image}
-          alt={Image}
-        />
+      <div className="left fixed top-0 left-0 bottom-0">
+        <div className=" min-h-[100%] hidden sm:flex lg:w-[500px] bg-[#f1f5f9] xl:w-[600px] 2xl:w-[900px] object-cover" />
       </div>
-      <div className="flex flex-col items-center mt-24 ">
-        <div className="right flex flex-col items-start justify-center m-4 sm:ml-[70px]">
+      <div className="flex relative sm:right-0 lg:-right-[500px] xl:-right-[600px] 2xl:-right-[1000px] flex-col items-center mt-24 ">
+        <div className="right  flex flex-col items-start justify-center m-4 sm:ml-[70px]">
           <div className="flex items-start justify-between ">
             <div className="circle">
               <span className="m-auto">Profile</span>

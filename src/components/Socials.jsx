@@ -2,7 +2,7 @@ import { useState } from "react";
 import { IconContext } from "react-icons";
 import { FiInstagram } from "react-icons/fi";
 import { BiGlobe } from "react-icons/bi";
-import { IoLogoTwitter } from "react-icons/io";
+import { IoLogoTwitter, IoIosCloseCircle } from "react-icons/io";
 import { IoLogoTiktok } from "react-icons/io5";
 
 const Socials = () => {
@@ -14,58 +14,67 @@ const Socials = () => {
     { id: 4, value: <IoLogoTiktok /> },
   ];
 
-  const handleClick = (social) => {
-    console.log("social clicked");
+  const handleSocialClick = (social) => {
     let flag = false;
-    currSocials.forEach((el) => {
-      if (el.id === social.id) flag = true;
+    currSocials.forEach((item) => {
+      if (item.id === social.id) flag = true;
     });
 
     if (!flag) setCurrSocials([...currSocials, social]);
   };
 
+  const handleCloseClick = (index) => {
+    setCurrSocials(currSocials.filter((item) => item.id !== index));
+  };
+
   return (
-    <div className="flex flex-col font-inter justify-center">
-      <div className="font-medium font-inter text-gray-70 text-sm">
-        Social Accounts
-      </div>
-      <div className="flex justify-center items-center">
-        <IconContext.Provider
-          value={{
-            size: "1.25rem",
-            className: "text-gray-70 mt-2 hover:text-[#07a460] cursor-pointer",
-          }}
-        >
-          {socialsArr.map((social) => (
-            <div
-              className="my-[8px] mr-[20px] pr-[8px]"
-              onClick={() => handleClick(social)}
-            >
-              {social.value}
-            </div>
-          ))}
-        </IconContext.Provider>
-      </div>
+    <div className="flex flex-col justify-center">
+      <div className="font-medium text-gray-70 text-sm">Social Accounts</div>
       <div className="mt-1.5 mb-2">
         {currSocials.map((social) => (
-          <div className="flex h-[46px] mb-1">
+          <div className="flex h-[46px] mb-1 items-center">
             <IconContext.Provider
               value={{
                 size: "1.25rem",
-                className: "text-gray-70 hover:text-[#07a460] cursor-pointer",
+                className: "text-gray-70 hover:text-green-50 cursor-pointer",
               }}
             >
-              <div className="border-y tracking-[-0.015em] leading-[1.3rem] text-[14px] border-l border-gray-20  py-[10px] px-[14px] bg-primary-gray rounded-l-lg h-full flex items-center">
+              <div className="border-y border-l border-gray-20 py-[10px] px-[14px] bg-primary-gray rounded-l-lg h-full flex items-center">
                 {social.value}
               </div>
             </IconContext.Provider>
             <input
               type="text"
-              className="border-y font-inter border-x border-gray-20 rounded-r-lg py-[10px] px-[14px] w-[348px] hover:border-gray-50 tracking-[-0.015em] leading-[1.3rem] text-[14px] h-full"
+              className="border-y border-x font-inter border-gray-400 rounded-r-lg py-[10px] px-[14px] w-[370px] hover:border-gray-500  h-full text-sm leading-[1.3rem] tracking-[-0.015em] font-light text-[#131517]"
               placeholder="URL or username"
             />
+            <IconContext.Provider value={{ color: "#737577", size: "1.25rem" }}>
+              <div
+                className="cursor-pointer ml-2"
+                onClick={() => handleCloseClick(social.id)}
+              >
+                <IoIosCloseCircle />
+              </div>
+            </IconContext.Provider>
           </div>
         ))}
+      </div>
+      <div className="flex justify-center items-center">
+        <IconContext.Provider
+          value={{
+            size: "1.25rem",
+            className: "text-gray-70 hover:text-green-500 cursor-pointer",
+          }}
+        >
+          {socialsArr.map((social) => (
+            <div
+              className="my-[8px] mx-[12px] pr-[8px]"
+              onClick={() => handleSocialClick(social)}
+            >
+              {social.value}
+            </div>
+          ))}
+        </IconContext.Provider>
       </div>
     </div>
   );
