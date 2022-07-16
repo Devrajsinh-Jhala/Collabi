@@ -15,7 +15,7 @@ const UserProfile = () => {
       <div className="left fixed top-0 left-0 bottom-0">
         <div className=" min-h-[100%] hidden sm:flex lg:w-[500px] bg-[#f1f5f9] xl:w-[600px] 2xl:w-[900px] object-cover" />
       </div>
-      <div className="flex relative sm:right-0 lg:-right-[500px] xl:-right-[600px] 2xl:-right-[1000px] flex-col items-center mt-24 ">
+      <div className="flex relative -right-16 sm:right-0 lg:-right-[500px] xl:-right-[600px] 2xl:-right-[1000px] flex-col items-center mt-24 ">
         <div className="right  flex flex-col items-start justify-center m-4 sm:ml-[70px]">
           <div className="flex items-start justify-between ">
             <div className="circle">

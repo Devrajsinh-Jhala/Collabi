@@ -28,7 +28,7 @@ const Socials = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center">
+    <div className="flex flex-col font-inter justify-center">
       <div className="font-medium text-gray-70 text-sm">Social Accounts</div>
       <div className="mt-1.5 mb-2">
         {currSocials.map((social) => (
@@ -36,7 +36,7 @@ const Socials = () => {
             <IconContext.Provider
               value={{
                 size: "1.25rem",
-                className: "text-gray-70 hover:text-green-50 cursor-pointer",
+                className: "text-black hover:text-green-50 cursor-pointer",
               }}
             >
               <div className="border-y border-l border-gray-20 py-[10px] px-[14px] bg-primary-gray rounded-l-lg h-full flex items-center">
@@ -45,7 +45,7 @@ const Socials = () => {
             </IconContext.Provider>
             <input
               type="text"
-              className="border-y border-x font-inter border-gray-400 rounded-r-lg py-[10px] px-[14px] w-[370px] hover:border-gray-500  h-full text-sm leading-[1.3rem] tracking-[-0.015em] font-light text-[#131517]"
+              className="border-y border-x font-inter border-gray-400 rounded-r-lg py-[10px] px-[14px] w-[350px] hover:border-gray-500  h-full text-sm leading-[1.3rem] tracking-[-0.015em] font-normal text-black"
               placeholder="URL or username"
             />
             <IconContext.Provider value={{ color: "#737577", size: "1.25rem" }}>

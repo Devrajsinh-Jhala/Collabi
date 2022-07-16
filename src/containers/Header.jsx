@@ -23,7 +23,7 @@ const Header = () => {
               </div>
             </div>
             <div className="mt-4 sm:w-[60%] sub-head overflow-hidden mb-[2rem] sm:mb-[0]">
-              <h1 className="text-center leading-[23px] sm:leading-[30px] tracking-[-0.014em] text-[18px]">
+              <h1 className="text-center leading-[23px] sm:leading-[30px] tracking-[-0.014em] text-16px sm:text-[18px]">
                 {" "}
                 This is where people who code connect, share their knowledge,
                 collaborate with like minded individuals and find new
