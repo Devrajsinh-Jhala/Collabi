@@ -5,10 +5,7 @@ import navImage from "../assets/Metadev Logo Image.png";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  let Links = [
-    { name: "Whitepaper", links: "/whitepaper" },
-    { name: "Dev Tokens", links: "/devTokens" },
-  ];
+  let Links = [{ name: "About Us", links: "/aboutus" }];
 
   let [open, setOpen] = useState(false);
   return (
@@ -37,12 +34,12 @@ const Navbar = () => {
               key={link.name}
               className="md:ml-8 text-base md:my-0 my-7 font-inter"
             >
-              <a
+              <Link
                 className="text-gray-800 hover:text-[#2536eb] font-semibold duration-500"
-                href={link.links}
+                to={link.links}
               >
                 {link.name}
-              </a>
+              </Link>
             </li>
           ))}
           <div className="flex  md:ml-4 flex-col items-center md:flex-row gap-5 md:gap-0">

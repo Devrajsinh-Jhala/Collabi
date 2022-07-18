@@ -8,6 +8,7 @@ import ReferralPage from "./components/ReferralPage";
 import SignInOtp from "./containers/SignInOtp";
 import UserProfile from "./containers/UserProfile";
 import Goals from "./containers/Goals";
+import AboutUs from "./containers/AboutUs";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/referral" element={<ReferralPage />} />
           <Route path="/profile" element={<UserProfile />} />
           <Route path="/goals" element={<Goals />} />
+          <Route path="/aboutus" element={<AboutUs />} />
         </Routes>
       </Router>
     </div>
