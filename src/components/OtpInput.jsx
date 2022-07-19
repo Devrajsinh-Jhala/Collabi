@@ -19,7 +19,7 @@ const OtpInput = ({ text, subText, boldText }) => {
           color="white"
           secondaryColor="gray"
         />
-        <div className=" ml-4 font-inter text-white text-16px ">
+        <div className=" ml-4 font-inter text-white text-[14px] ">
           Verfiying...
         </div>
       </div>
@@ -41,7 +41,7 @@ const OtpInput = ({ text, subText, boldText }) => {
       position: "bottom-center",
       duration: 3000,
       style: {
-        width: "200px",
+        width: "160px",
         borderRadius: "9999px",
         fontFamily: "Inter",
         backgroundColor: "black",

@@ -1,5 +1,5 @@
 import React from "react";
-import CustomInput from "../components/CustomInput";
+
 import Navbar from "../components/Navbar";
 import Tagline from "../components/Tagline";
 import Companies from "./Companies";
@@ -14,7 +14,7 @@ const Header = () => {
           <div className="flex  flex-col items-center gap-2 md:gap-4 lg:gap-6">
             <div className=" flex flex-wrap sm:w-[70%]  sm:justify-center ">
               <div className="overflow-hidden mt-16">
-                <h1 className=" z-0 w-full max-w-[1000px] text-center big-text mb-[2rem] sm:mb-[0]  ">
+                <h1 className=" z-0 w-full max-w-[1000px] text-center big-text mb-[1.5rem] sm:mb-[0]  ">
                   <span className="sm:p-2 px-4">
                     A professional networking platform built for
                   </span>
@@ -22,7 +22,7 @@ const Header = () => {
                 </h1>
               </div>
             </div>
-            <div className="mt-4 sm:w-[60%] sub-head overflow-hidden mb-[2rem] sm:mb-[0]">
+            <div className="sm:mt-4  sm:w-[60%] sub-head overflow-hidden mb-[2rem] sm:mb-[0]">
               <h1 className="text-center leading-[23px] sm:leading-[30px] tracking-[-0.014em] text-16px sm:text-[18px]">
                 {" "}
                 This is where people who code connect, share their knowledge,
@@ -30,7 +30,6 @@ const Header = () => {
                 opportunities
               </h1>
             </div>
-            <CustomInput />
           </div>
         </div>
       </div>

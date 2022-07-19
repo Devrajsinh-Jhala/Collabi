@@ -11,7 +11,7 @@ const AboutUsBigCards = ({
 }) => {
   return (
     <div
-      className={`w-[740px] rounded-xl cursor-pointer hover:-translate-y-4 duration-200 ease-in-out px-7 py-6 mt-10 mb-10 flex flex-col ${primary} text-white  items-start justify-start`}
+      className={` w-full md:w-[700px] rounded-xl cursor-pointer hover:-translate-y-4 duration-200 ease-in-out px-7 py-6 mt-10 mb-10 flex flex-col ${primary} text-white  items-start justify-start`}
     >
       <p className="text-[26px] font-inter leading-8 mt-4 tracking-[-0.5px] font-bold">
         {heading}
