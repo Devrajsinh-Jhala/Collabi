@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
@@ -9,6 +10,19 @@ import Socials from "../components/Socials";
 import UserButton from "../components/UserButton";
 
 const UserProfile = () => {
+  useEffect(() => {
+    toast("Hello", {
+      position: "bottom-center",
+      duration: 1500,
+      style: {
+        width: "160px",
+        borderRadius: "9999px",
+        fontFamily: "Inter",
+        backgroundColor: "black",
+      },
+    });
+  }, []);
+
   const [value, setValue] = useState("");
   return (
     <div className="flex h-[100%] xl:h-[100vh] ">
@@ -77,6 +91,7 @@ const UserProfile = () => {
               <UserButton text={"Next"} />
             </Link>
           </div>
+          <Toaster />
         </div>
       </div>
     </div>

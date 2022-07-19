@@ -12,10 +12,10 @@ const AboutUs = () => {
       <div className="w-full min-h-[100vh] bg-[#f8f8f8] h-[100%] flex flex-col items-center justify-center ">
         <div className=" h-fit mt-40">
           <div className="flex flex-col items-center leading-[4rem] justify-center">
-            <div className=" text-[40px] sm:text-[56px] px-5 md:px-0 md:w-[850px] font-inter tracking-normal sm:tracking-[-0.15625rem] font-bold text-[#6b6f76]">
-              <p className="text-[40px] sm:text-[56px]">
+            <div className=" text-[40px] px-5 sm:text-[56px] w-fit overflow-hidden md:w-[850px] font-inter tracking-normal sm:tracking-[-0.15625rem] font-bold leading-[3rem] sm:leading-[4rem] text-[#6b6f76]">
+              <span className=" mr-3 text-[40px] sm:text-[56px]">
                 Say goodbye to crypto investing bcz it's time to
-              </p>{" "}
+              </span>
               <span className=" text-[40px] sm:text-[56px] font-inter text-transparent bg-clip-text bg-gradient-to-br from-[#6699FF] to-[#FF3366] tracking-normal sm:tracking-[-0.15625rem] font-bold ">
                 earn crypto
               </span>
@@ -24,19 +24,19 @@ const AboutUs = () => {
           </div>
           <div className="flex flex-col  md:w-[740px] mb-10">
             <div className="flex flex-col items-center justify-center">
-              <p className=" mt-8 sm:mt-5 font-inter px-5 md:px-0 text-base sm:text-[15px] leading-6">
+              <p className=" mt-8 font-inter px-5 md:px-5 text-base sm:text-[15px] leading-6">
                 MetaDev is the world’s first exclusive members only web3
                 professional networking platform built for Developers with ideas
                 never heard before aimed at transforming the experiences of
                 Developers and making their dreams come true.
               </p>
             </div>
-            <p className="mt-5 font-inter px-5 sm:px-0 text-base md:text-[15px] leading-6">
+            <p className="mt-5 font-inter px-5 sm:px-5 text-base md:text-[15px] leading-6">
               MetaDev rewards Developers with crypto tokens for spending their
               time productively, pursuing their goals & interests and adding
               value to the community.
             </p>
-            <p className="mt-5 font-inter px-5 sm:px-0 text-base md:text-[15px] leading-6">
+            <p className="mt-5 font-inter px-5 sm:px-5 text-base md:text-[15px] leading-6">
               It's nice to meet you! 👋🏼
             </p>
           </div>
@@ -59,7 +59,7 @@ const AboutUs = () => {
             </div>
           </div>
 
-          <div className=" flex mx-5 md:mx-0 flex-col sm:flex-row sm:space-x-5 items-center justify-center mt-10 ">
+          <div className=" flex mx-5 md:mx-5 flex-col sm:flex-row sm:space-x-5 items-center justify-center mt-10 ">
             <div className="">
               <AboutUsCard
                 description={
@@ -76,7 +76,7 @@ const AboutUs = () => {
             </div>
           </div>
 
-          <div className="flex mx-5 md:mx-0 items-center justify-center mb-10">
+          <div className="flex mx-5 md:mx-5 items-center justify-center mb-10">
             <BigCard
               description={
                 "As a software developer, it's been incredibly frustrating using networks where connections are meaningless, content is focused on self-promotion, messages become spam, and community is built top-down, instead of bottom-up. It deteriorates the user experience, and worse, it kills the value of the network"
@@ -85,7 +85,7 @@ const AboutUs = () => {
           </div>
         </div>
 
-        <div className="-mt-12 mx-5 md:mx-0">
+        <div className="-mt-12 mx-5 md:mx-5">
           <AboutUsBigCards
             primary={"bg-slate-400"}
             heading={"Vision"}
