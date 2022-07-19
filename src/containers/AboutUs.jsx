@@ -1,67 +1,92 @@
 import React from "react";
 import AboutUsBigCards from "../components/AboutUsBigCards";
 import AboutUsCard from "../components/AboutUsCard";
-import GradientCards from "../components/GradientCards";
+import BigCard from "../components/BigCard";
 
 const AboutUs = () => {
   return (
-    <div className="w-full min-h-[100vh] bg-[#f8f8f8] h-[100%] flex flex-col items-center justify-start ">
+    <div className="w-full min-h-[100vh] bg-[#f8f8f8] h-[100%] flex flex-col items-center justify-center ">
       <div className="w-[730px] h-fit mt-40">
-        <div className="flex space-x-3 items-center justify-start">
-          <div className="text-[56px] font-inter tracking-[-0.15625rem] font-semibold text-[#6b6f76]">
-            Hey, I'm
+        <div className="flex flex-col items-start leading-[4rem] justify-start">
+          <div className="text-[56px] w-[850px] font-inter tracking-[-0.15625rem] font-bold text-[#6b6f76]">
+            Say goodbye to crypto investing bcz it's time to{" "}
+            <span className="text-[56px] font-inter text-transparent bg-clip-text bg-gradient-to-br from-[#6699FF] to-[#FF3366] tracking-[-0.15625rem] font-bold ">
+              earn crypto
+            </span>
           </div>
-          <div className="text-[56px] font-inter text-transparent bg-clip-text bg-gradient-to-r from-[#6699FF] to-[#FF3366] tracking-[-0.15625rem] font-semibold ">
-            Sally
-          </div>
+          {/* text-[56px] font-inter text-transparent bg-clip-text bg-gradient-to-br from-[#6699FF] to-[#FF3366] tracking-[-0.15625rem] font-bold  */}
         </div>
-        <p className="mt-5 font-inter">
-          I'm a third-year undergrad studying computer science and cognitive
-          science. I grew up in New Jersey, currently living in NYC. My passions
-          include web3, design, and boba.
+        <p className="mt-5 font-inter text-[15px] leading-6">
+          MetaDev is the world’s first exclusive members only web3 professional
+          networking platform built for Developers with ideas never heard before
+          aimed at transforming the experiences of Developers and making their
+          dreams come true
         </p>
-        <p className="mt-5 font-inter">
-          Currently, I'm running a student-led class at my college, where I
-          teach UI/UX design to fellow students. This summer I'll be working as
-          a front-end developer at Cardy.{" "}
+        <p className="mt-5 font-inter text-[15px] leading-6">
+          MetaDev rewards Developers with crypto tokens for spending their time
+          productively, pursuing their goals & interests and adding value to the
+          community
         </p>
-        <p className="mt-5 font-inter">It's nice to meet you! 👋🏼</p>
-        <div className="text-[36px] mt-10 font-inter tracking-[-1px]  font-semibold text-[#6b6f76]">
-          what else I am working on ?
+        <p className="mt-5 font-inter text-[15px] leading-6">
+          It's nice to meet you! 👋🏼
+        </p>
+
+        <AboutUsBigCards
+          primary={"bg-slate-400"}
+          subHeading={""}
+          heading={"Why MetaDev?"}
+          description={
+            "Mass adoption has been a long-standing goal for the blockchain and crypto industry. Almost every business in this space strives for mass adoption in one way or the other. But, with just over 300 million crypto users and 70 million blockchain wallet users, there’s clearly a long way to go. Lack of real time use cases can be credited as the biggest deterrent to mass adoption. "
+          }
+          description2="Social Media on the Blockchain (SocialFi) Could Be Key to Mass Adoption."
+        />
+        <div className="text-[36px] mt-10 font-inter tracking-[-1px]  font-bold text-[#6b6f76]">
+          The Problem
         </div>
         <div className="mt-10 grid grid-cols-2 ">
           <div className="col-span-1">
-            <GradientCards />
+            <AboutUsCard
+              description={
+                "LinkedIn is on a slippery slope, fuelled by a focus on advertising that is fast eroding its value as a platform for meaningful professional networking."
+              }
+            />
           </div>
           <div className="col-span-1">
-            <AboutUsCard />
-          </div>
-          <div className="col-span-1">
-            <AboutUsCard />
-          </div>
-          <div className="col-span-1">
-            <GradientCards />
+            <AboutUsCard
+              description={
+                "Content that was once frowned upon on Facebook is now the new normal on LinkedIn. LinkedIn has become the new Facebook"
+              }
+            />
           </div>
         </div>
+        <div className="">
+          <BigCard
+            description={
+              "As a software developer, it's been incredibly frustrating using networks where connections are meaningless, content is focused on self-promotion, messages become spam, and community is built top-down, instead of bottom-up. It deteriorates the user experience, and worse, it kills the value of the network"
+            }
+          />
+        </div>
       </div>
-      <AboutUsBigCards
-        subHeading={"Opinion"}
-        heading={"Will Web3.0 Change the Way You Onteract With the Internet?"}
-        description={
-          "A blog discussing Web3.0, its impact, and how it will change the natural way we use the internet."
-        }
-        authorName={"Sally Perez"}
-        date={"2022-04-05"}
-      />
+
       <div className="-mt-12">
         <AboutUsBigCards
-          subHeading={"Deep Dive"}
-          heading={"Desigining for Web3: From the View to the Machine "}
+          primary={"bg-slate-400"}
+          heading={"Vision"}
           description={
-            'How exactly do you make "Visual Web3"? A blog about how to work with a new set of backend, frontend and design practices'
+            "What if there was a truly professional networking platform for Developers? What if there was a new way for developers to collaborate, connect, share knowledge and monetize their time spent? What if there was a crypto token with a true use case which you can spend without the need of converting it into fiat?"
           }
-          authorName={"Sally Perez"}
-          date={"2022-04-12"}
+          description2={
+            "With Metadev, we believe that this is not only possible but absolutely necessary."
+          }
+        />
+
+        <AboutUsBigCards
+          primary={"bg-slate-400"}
+          heading={"Mission"}
+          description={
+            "Our mission is to create a truly professional networking platform for developers where every developer is rewarded for every moment that they spend on the platform to explore their passion and interests and make their dreams come true."
+          }
+          description2={""}
         />
       </div>
     </div>

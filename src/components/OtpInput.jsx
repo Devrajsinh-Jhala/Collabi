@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-restricted-globals
 import React, { useEffect } from "react";
-import { ToastContainer, toast } from "react-toastify";
+
+import toast, { Toaster } from "react-hot-toast";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
 import { Oval } from "react-loader-spinner";
@@ -9,17 +10,17 @@ const OtpInput = ({ text, subText, boldText }) => {
   const navigate = useNavigate();
   const spinnerText = () => {
     return (
-      <div className="flex items-center justify-start">
+      <div className="flex items-center justify-between">
         <Oval
           ariaLabel="loading-indicator"
           height={20}
           width={20}
           strokeWidth={5}
-          color="red"
-          secondaryColor="yellow"
+          color="white"
+          secondaryColor="gray"
         />
-        <div className="ml-4 font-inter text-white text-16px ">
-          Verifying...
+        <div className=" ml-4 font-inter text-white text-16px ">
+          Verfiying...
         </div>
       </div>
     );
@@ -38,17 +39,12 @@ const OtpInput = ({ text, subText, boldText }) => {
     console.log("next");
     toast(spinnerText, {
       position: "bottom-center",
-      autoClose: 1500,
-      hideProgressBar: true,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
+      duration: 3000,
       style: {
         width: "200px",
-        borderRadius: "10%",
+        borderRadius: "9999px",
         fontFamily: "Inter",
-        backgroundColor: "Green",
+        backgroundColor: "black",
       },
     });
     setTimeout(() => {
@@ -115,6 +111,7 @@ const OtpInput = ({ text, subText, boldText }) => {
             </form>
           </div>
         </div>
+        <Toaster />
       </div>
     </>
   );

@@ -1,5 +1,6 @@
 import React from "react";
 import navImage from "../assets/Metadev Logo Image.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -21,7 +22,9 @@ const Footer = () => {
       <div className="px-4 py-2 w-full justify-start flex flex-col md:w-[36%]">
         <p className=" font-semibold">Company</p>
 
-        <p className="py-2 text-[13px] text-[#6b6f76]">About us</p>
+        <Link to="/aboutus">
+          <p className="py-2 text-[13px] text-[#6b6f76]">About us</p>
+        </Link>
         <p className="py-2 text-[13px] text-[#6b6f76]">Blog</p>
         <p className="py-2 text-[13px] text-[#6b6f76]">Request Feature</p>
         <p className="py-2 text-[13px] text-[#6b6f76]">Careers</p>

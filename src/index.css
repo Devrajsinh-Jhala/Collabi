@@ -24,7 +24,7 @@
 }
 
 .big-text {
-  @apply text-[36px] lg:text-[54px] lg:font-[800] tracking-[-2.5px] leading-10 lg:leading-[4rem] font-bold;
+  @apply text-[36px] leading-10 lg:text-[54px] lg:font-[800] tracking-[-2.5px] lg:leading-[4rem] font-bold;
 }
 
 .input-field {
