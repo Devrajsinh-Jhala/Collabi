@@ -9,6 +9,7 @@ import SignInOtp from "./containers/SignInOtp";
 import UserProfile from "./containers/UserProfile";
 import Goals from "./containers/Goals";
 import AboutUs from "./containers/AboutUs";
+import FinishRegistration from "./containers/FinishRegistration";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/profile" element={<UserProfile />} />
           <Route path="/goals" element={<Goals />} />
           <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/finish-registration" element={<FinishRegistration />} />
         </Routes>
       </Router>
     </div>

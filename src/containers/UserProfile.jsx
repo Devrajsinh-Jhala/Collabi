@@ -5,12 +5,15 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import Socials from "../components/Socials";
-import UserButton from "../components/UserButton";
 
 const UserProfile = () => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/goals");
+  };
   const toastMessage = () => {
     return (
       <div className="flex w-full items-center justify-between">
@@ -95,11 +98,12 @@ const UserProfile = () => {
 
           <div className="mt-10 mb-5">
             <Socials />
-            <div className="mt-2">
-              <Link to="/goals">
-                <UserButton text={"Next"} />
-              </Link>
-            </div>
+            <button
+              onClick={handleClick}
+              className="mt-5 mb-5 font-inter w-[80px] hover:bg-slate-700 bg-black text-white rounded-full  text-sm p-[0.6rem] font-semibold cursor-pointer px-[1.5rem]"
+            >
+              <div className="font-inter">Next</div>
+            </button>
           </div>
 
           <Toaster />

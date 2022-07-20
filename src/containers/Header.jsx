@@ -14,8 +14,8 @@ const Header = () => {
           <div className="flex  flex-col items-center gap-2 md:gap-4 lg:gap-6">
             <div className=" flex flex-wrap sm:w-[70%]  sm:justify-center ">
               <div className="overflow-hidden mt-16">
-                <h1 className=" z-0 w-full max-w-[1000px] text-center big-text mb-[1.5rem] sm:mb-[0]  ">
-                  <span className="sm:p-2 px-4">
+                <h1 className=" z-0 w-full max-w-[1000px] text-center sm:text-center big-text mb-[1.5rem] sm:mb-[0]  ">
+                  <span className="sm:p-2 px-2">
                     A professional networking platform built for
                   </span>
                   <span className=" colored-text">developers</span>

@@ -12,11 +12,11 @@ const AboutUs = () => {
       <div className="w-full min-h-[100vh] bg-[#f8f8f8] h-[100%] flex flex-col items-center justify-center ">
         <div className=" h-fit mt-40">
           <div className="flex flex-col items-center leading-[4rem] justify-center">
-            <div className=" text-[40px] px-5 sm:text-[56px] w-fit overflow-hidden lg:w-[850px] font-inter tracking-normal sm:tracking-[-0.15625rem] font-bold leading-[3rem] sm:leading-[4rem] text-[#6b6f76]">
-              <span className=" mr-3 text-[40px] sm:text-[56px]">
+            <div className=" text-[40px] px-5 sm:text-[56px] w-fit overflow-hidden lg:w-[850px] font-inter tracking-tighter sm:tracking-[-0.15625rem] font-bold leading-[3rem] sm:leading-[4rem] text-[#6b6f76]">
+              <span className=" mr-2 sm:mr-3 text-[40px] sm:text-[56px]">
                 Say goodbye to crypto investing bcz it's time to
               </span>
-              <span className=" text-[40px] sm:text-[56px] font-inter text-transparent bg-clip-text bg-gradient-to-br from-[#6699FF] to-[#FF3366] tracking-normal sm:tracking-[-0.15625rem] font-bold ">
+              <span className=" text-[40px] sm:text-[56px] font-inter text-transparent bg-clip-text bg-gradient-to-br from-[#6699FF] to-[#FF3366] tracking-tighter sm:tracking-[-0.15625rem] font-bold ">
                 earn crypto
               </span>
             </div>
