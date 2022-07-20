@@ -12,7 +12,7 @@ const AboutUs = () => {
       <div className="w-full min-h-[100vh] bg-[#f8f8f8] h-[100%] flex flex-col items-center justify-center ">
         <div className=" h-fit mt-40">
           <div className="flex flex-col items-center leading-[4rem] justify-center">
-            <div className=" text-[40px] px-5 sm:text-[56px] w-fit overflow-hidden md:w-[850px] font-inter tracking-normal sm:tracking-[-0.15625rem] font-bold leading-[3rem] sm:leading-[4rem] text-[#6b6f76]">
+            <div className=" text-[40px] px-5 sm:text-[56px] w-fit overflow-hidden lg:w-[850px] font-inter tracking-normal sm:tracking-[-0.15625rem] font-bold leading-[3rem] sm:leading-[4rem] text-[#6b6f76]">
               <span className=" mr-3 text-[40px] sm:text-[56px]">
                 Say goodbye to crypto investing bcz it's time to
               </span>

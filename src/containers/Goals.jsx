@@ -19,10 +19,10 @@ const Goals = () => {
   return (
     <div className="flex h-[100%] xl:h-[100vh] ">
       <div className="left fixed top-0 left-0 bottom-0 ">
-        <div className=" min-h-[100%] hidden sm:flex lg:w-[400px] bg-[#f1f5f9] xl:w-[500px] 2xl:w-[800px] object-cover" />
+        <div className=" min-h-[100%] hidden sm:flex lg:w-[400px] bg-[#f1f5f9] xl:w-[500px] 2xl:w-[700px] object-cover" />
       </div>
-      <div className="flex flex-col relative sm:right-0 lg:-right-[400px] xl:-right-[500px]  2xl:-right-[900px] items-center mb-10 mt-10 ">
-        <div className="pl-[2rem] mt-10 h-[100%]  ">
+      <div className="flex flex-col relative sm:right-0 lg:-right-[400px] xl:-right-[500px]  2xl:-right-[750px] items-center mb-10 mt-10 ">
+        <div className="pl-[2rem] xl:mt-20 h-[100%]  ">
           <div className=" flex items-center mb-10 justify-center">
             <div className="grid align-middle mb-10 grid-cols-2 gap-x-5 gap-y-5">
               <div className="col-span-1">
