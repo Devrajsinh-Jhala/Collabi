@@ -7,7 +7,9 @@ const Test = () => {
     <div>
       <Navbar />
 
-      <img className=" h-[85vh] w-full object-cover  " src={landing} alt="" />
+      <div className="mt-10 mb-10">
+        <img className=" h-[85vh] w-full object-cover  " src={landing} alt="" />
+      </div>
     </div>
   );
 };
