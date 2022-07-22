@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from "react";
-import toast, { Toaster } from "react-hot-toast";
+import React, { useState } from "react";
 
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-import { BsFillCheckCircleFill } from "react-icons/bs";
 
 import { useNavigate } from "react-router-dom";
 
@@ -14,28 +12,6 @@ const UserProfile = () => {
   const handleClick = () => {
     navigate("/goals");
   };
-  const toastMessage = () => {
-    return (
-      <div className="flex w-full items-center justify-between">
-        <div className="mr-3 text-white">
-          <BsFillCheckCircleFill />
-        </div>
-        <p className="text-white text-sm font-inter">Successfully Verified</p>
-      </div>
-    );
-  };
-  useEffect(() => {
-    toast(toastMessage, {
-      position: "bottom-center",
-      duration: 1500,
-      style: {
-        width: "fit-content",
-        borderRadius: "9999px",
-        fontFamily: "Inter",
-        backgroundColor: "black",
-      },
-    });
-  }, []);
 
   const [value, setValue] = useState("");
   return (
@@ -105,8 +81,6 @@ const UserProfile = () => {
               <div className="font-inter">Next</div>
             </button>
           </div>
-
-          <Toaster />
         </div>
       </div>
     </div>

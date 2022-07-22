@@ -1,9 +1,43 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
+import toast, { Toaster } from "react-hot-toast";
+import "react-toastify/dist/ReactToastify.css";
+import { BsFillCheckCircleFill } from "react-icons/bs";
 import Logo from "../assets/Metadev Logo Image.png";
 import ReferralButton from "./ReferralButton";
 
 const ReferralPage = () => {
+  const navigate = useNavigate();
+  const spinnerText = () => {
+    return (
+      <div className="flex items-center justify-between">
+        <div className="text-white">
+          <BsFillCheckCircleFill />
+        </div>
+
+        <div className=" ml-4 font-inter text-white text-[14px] ">
+          Access Unlocked
+        </div>
+      </div>
+    );
+  };
+
+  function CheckOTP() {
+    console.log("next");
+    toast(spinnerText, {
+      position: "bottom-center",
+      duration: 3000,
+      style: {
+        width: "230px",
+        borderRadius: "9999px",
+        fontFamily: "Inter",
+        backgroundColor: "black",
+      },
+    });
+    setTimeout(() => {
+      navigate("/sign-up");
+    }, 2500);
+  }
   return (
     <div className="flex h-[100%] xl:h-[100vh] ">
       <div className="left fixed top-0 left-0 bottom-0 ">
@@ -31,14 +65,16 @@ const ReferralPage = () => {
 
             <input
               className=" w-full overflow-hidden sm:w-[200px] leading-[1.3rem] text-[14px] mt-5 tracking-[-0.015em] font-inter pl-[15px] border border-gray-400 rounded-lg  focus:outline-none py-[15px] h-[43px] "
-              type="email"
-              name="email"
+              type="text"
+              name="text input"
               placeholder="Invite Code"
+              onKeyPress={() => CheckOTP()}
             />
             <ReferralButton text={"Unlock Access"} />
           </div>
         </div>
       </div>
+      <Toaster />
     </div>
   );
 };

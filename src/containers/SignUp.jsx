@@ -1,5 +1,5 @@
 import React from "react";
-import AuthenticationButton from "../components/AuthenticationButton";
+
 import InputElement from "../components/ImputElement";
 import Logo from "../assets/Metadev Logo Image.png";
 import SignUpButton from "../components/SignUpButton";
@@ -17,10 +17,6 @@ const SignUp = () => {
           <div>
             <img className="w-36" src={Logo} alt={Logo} />
             <InputElement />
-            <AuthenticationButton
-              link={"otp-verification"}
-              text={"Create Account"}
-            />
 
             <div className=" mt-24 md:mt-20 md:mb-8">
               <span className="text-slate-600 font-inter font-semibold">
