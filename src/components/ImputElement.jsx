@@ -50,7 +50,7 @@ const InputElement = () => {
             disabled={
               formik.errors.email || formik.values.email === "" ? true : false
             }
-            className={` w-full font-inter sm:w-[400px] h-[50px] bg-black rounded-full font-semibold text-[18px] hover:bg-gray-800 text-white`}
+            className={` disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-black w-full font-inter sm:w-[400px] h-[50px] bg-black rounded-full font-semibold text-[18px] hover:bg-gray-800 text-white`}
           >
             Create Account
           </button>

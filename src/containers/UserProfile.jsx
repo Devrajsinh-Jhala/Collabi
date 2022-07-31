@@ -150,7 +150,7 @@ const UserProfile = () => {
                   : false
               }
               onClick={handleClick}
-              className="mt-5 mb-5 font-inter w-[80px] hover:bg-slate-700 bg-black text-white rounded-full  text-sm p-[0.6rem] font-semibold cursor-pointer px-[1.5rem]"
+              className=" disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-black mt-5 mb-5 font-inter w-[80px] hover:bg-slate-700 bg-black text-white rounded-full  text-sm p-[0.6rem] font-semibold cursor-pointer px-[1.5rem]"
             >
               <div className="font-inter">Next</div>
             </button>
