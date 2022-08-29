@@ -10,9 +10,6 @@ import UserProfile from "./containers/UserProfile";
 import Goals from "./containers/Goals";
 import AboutUs from "./containers/AboutUs";
 import FinishRegistration from "./containers/FinishRegistration";
-import Test from "./containers/Test";
-import OtherComponents from "./containers/OtherComponents";
-import LivePeer from "./containers/LivePeer";
 
 function App() {
   return (
@@ -31,7 +28,6 @@ function App() {
           <Route path="/goals" element={<Goals />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/finish-registration" element={<FinishRegistration />} />
-          <Route path="/test" element={<Test />} />
         </Routes>
       </Router>
     </div>
